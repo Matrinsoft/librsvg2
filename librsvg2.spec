@@ -12,7 +12,7 @@
 
 # Use bundled deps as we don't ship the exact right versions for all the
 # required rust libraries
-%if 0%{?rhel}
+%if 0%{?rhel} || 0%{?bundled_rust_deps}
 %global bundled_rust_deps 1
 %else
 %global bundled_rust_deps 0
