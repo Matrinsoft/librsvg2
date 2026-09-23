@@ -87,7 +87,7 @@ BuildRequires:  pkgconfig(pangocairo)
 BuildRequires:  pkgconfig(pangoft2)
 BuildRequires:  vala
 BuildRequires:  /usr/bin/rst2man
-%if 0%{?bundled_rust_deps}
+%if 0%{?bundled_rust_deps} && 0%{?rhel}
 BuildRequires:  rust-toolset
 %else
 BuildRequires:  cargo-rpm-macros
