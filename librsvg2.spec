@@ -72,6 +72,7 @@ Patch:          0003-Fedora-Drop-windows-specific-dependencies.patch
 BuildRequires:  gcc
 BuildRequires:  meson >= 1.3.0
 BuildRequires:  cargo-c >= 0.10.10
+BuildRequires:  pkgconfig(dav1d)
 BuildRequires:  gi-docgen
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(cairo) >= %{cairo_version}
